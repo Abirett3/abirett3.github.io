@@ -1961,7 +1961,7 @@ body.dark .bg-white {
 
 .slick-dots li button:before {
   content: "";
-  background: #00c88f30;
+  background: rgb(138, 196, 255);
   border-radius: 3px;
   opacity: 1;
   height: 6px;
