@@ -1006,7 +1006,7 @@ select.portfolio-filter-mobile {
 /*                      CONTACT                              
 /*=================================================================*/
 .contact-info {
-  background-image: url("../images/map.svg");
+  background-image: url("../Images/map.svg");
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 200px;
