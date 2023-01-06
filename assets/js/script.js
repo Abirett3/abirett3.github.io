@@ -29,8 +29,6 @@ for (let i = 0; i < navbarLinks.length; i++) {
 
 
 
-
-
 /**
  * back to top & header
  */
@@ -46,3 +44,9 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+// Remove Preloader After All Data Loades
+document.querySelector(".preloader").classList.add("opacity-0");
+setTimeout(function () {
+  document.querySelector(".preloader").style.display = "none";
+}, 1000);
