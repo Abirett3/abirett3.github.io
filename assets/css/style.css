@@ -1073,3 +1073,61 @@ textarea.contact-input {
   .footer-list { margin-inline: 0; }
 
 }
+
+/* Preloader */
+.preloader {
+  background-color: rgb(37, 37, 37);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 150;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+.preloader.opacity-0 {
+  opacity: 0;
+}
+
+.preloader .loader {
+  height: 4rem;
+  width: 4rem;
+  border: 0.25rem solid #2facff;
+  border-radius: 50%;
+  border-top: 0.25rem solid transparent;
+  border-bottom: 0.25rem solid transparent;
+  animation: spin 2s linear infinite;
+  -webkit-animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
