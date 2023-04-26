@@ -1,56 +1,59 @@
 <!DOCTYPE html>
+<!-- Created By A.H. Abir (Ashfaque Hossain Abir) -->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
   <title>A.H. Abir | Innovating The Web</title>
+  <meta name="title" content="A.H. Abir | Innovating The Web">
+  <meta name="description" content="I'm Ashfaque hossain, a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!">
 
-    <!-- Required Social Preview MetaTags -->
-    
-        <!-- Primary Meta Tags -->
-        <meta name="title" content="A.H. Abir | Innovating The web">
-        <meta name="description" content="I'm Ashfaque hossain, a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!">
-    
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://abirett3.github.io/">
-        <meta property="og:title" content="A.H. Abir | Innovating The web">
-        <meta property="og:description" content="I'm Ashfaque hossain, a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!">
-        <meta property="og:image" content="Images/preview.png">
-    
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://abirett3.github.io/">
-        <meta property="twitter:title" content="A.H. Abir | Innovating The web">
-        <meta property="twitter:description" content="I'm Ashfaque hossain, a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!">
-        <meta property="twitter:image" content="Images/preview.png">
-    
-        <!-- End of Required Social Preview MetaTags -->
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://abirett3.github.io/">
+   <meta property="og:title" content="A.H. Abir | Innovating The web">
+   <meta property="og:description" content="I'm Ashfaque hossain, a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!">
+   <meta property="og:image" content="assets/images/preview.png">
 
+   <!-- Twitter -->
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://abirett3.github.io/">
+   <meta property="twitter:title" content="A.H. Abir | Innovating The web">
+   <meta property="twitter:description" content="I'm Ashfaque hossain, a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!">
+   <meta property="twitter:image" content="assets/images/preview.png">
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-
-    <!-- Copyrighted Site Verification-->
-    <meta name="copyrighted-site-verification" content="73eaeec4d9aa654b" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7NC3B4ZY0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'G-X7NC3B4ZY0');
-    </script>
+   <!-- End of Required Social Preview MetaTags -->
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/fav_icon.png" type="image/x-icon">
+
+  <!-- Copyrighted Site Verification-->
+  <meta name="copyrighted-site-verification" content="73eaeec4d9aa654b" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7NC3B4ZY0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-X7NC3B4ZY0');
+  </script>
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
   <!-- 
     - custom css link
@@ -58,21 +61,14 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- 
-    - google font link
+    - preload images
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+
 </head>
 
-<body id="top">
-
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader"></div>
-  </div>
+<body>
 
   <!-- 
     - #HEADER
@@ -81,48 +77,93 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#">
-        <h1 class="logo">A.H. Abir</h1>
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-dark.svg" width="64" height="24" alt="Julia home">
       </a>
 
-      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
-        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-        <ion-icon name="close-outline" class="close-icon"></ion-icon>
-      </button>
+      <nav class="navbar" data-navbar>
 
-      <nav class="navbar container">
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="64" height="24" alt="Julia home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            <a href="#" class="navbar-link">Home</a>
           </li>
 
           <li>
-            <a href="#about" class="navbar-link" data-nav-link>About</a>
+            <a href="https://ashfaquehossainabir.github.io/my-cv/" class="navbar-link">About</a>
           </li>
 
           <li>
-            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+            <a href="https://abirett3.github.io/recent-projects/" class="navbar-link">Projects</a>
           </li>
 
           <li>
-            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+            <a href="https://abirett.wordpress.com/" class="navbar-link">Blog</a>
           </li>
 
           <li>
-            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-          </li>
-
-          <li>
-            <a href="#projects" class="navbar-link" data-nav-link>Projects</a>
-          </li>
-
-          <li>
-            <a href="documents/Resume of A.H. Abir (CV).pdf" class="btn btn-primary">Download CV</a>
+            <a href="https://abirett3.github.io/hire-me/" class="navbar-link">Contact</a>
           </li>
 
         </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">ashfaquehossain300@gmail.com</a>
+
+          <a href="tel:001234567890" class="contact-link">(+880) 1788420386</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://twitter.com/ashfaquertc70" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/ashfaquertx" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/abirett" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/tesszedox/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/channel/UCOPh7wtyJgve_YknUFXp0HA/about" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
       </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
 
     </div>
   </header>
@@ -138,50 +179,34 @@
         - #HERO
       -->
 
-      <section class="hero" id="home">
+      <section class="section hero" aria-label="home">
         <div class="container">
 
-          <div class="hero-banner">
+          <figure class="hero-banner">
+            <img src="./assets/images/my pic_s.png" width="560" height="540" alt="A.H. Abir" class="w-100"
+              data-reveal="top">
 
-            <img src="./assets/images/hero-banner.png" width="800" height="864" loading="lazy" alt="Ethan's Photo"
-              class="img-cover">
-
-            <div class="elem elem-1">
-              <p class="elem-title">3</p>
-
-              <p class="elem-text">Years of Success</p>
-            </div>
-
-            <div class="elem elem-2">
-              <p class="elem-title">20+</p>
-
-              <p class="elem-text">Projects Completed</p>
-            </div>
-
-            <div class="elem elem-3">
-              <ion-icon name="trophy"></ion-icon>
-            </div>
-
-            <img src="./assets/images/rotate-img.png" width="169" height="172" alt="Rotate Image"
-              class="rotate-img">
-
-          </div>
+            <img src="./assets/images/hero-shape.svg" width="203" height="91" alt="250+ Projects Done" class="shape"
+              data-reveal="top" data-reveal-delay="0.25s">
+          </figure>
 
           <div class="hero-content">
 
-            <h2 class="hero-title">
-              <span>Hello I'm</span>
-              <strong>Ashfaque Hossain Abir</strong> Full-Stack Developer from Bangladesh
-            </h2>
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              I'm Ashfaque Hossain
+            </h1>
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              Web Developer
+            </h1>
 
-            <p class="hero-text">
-              Front-End Developer, Back-End Developer, WordPress Expert, Graphic Designer, Programmer
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              Hello guys, my full-name is Ashfaque Hossain Abir. I love coding, solving problems, building amazing projects, reading books & many other cool stuffs.
             </p>
 
-            <div class="btn-group">
-              <a href="https://abirett3.github.io/hire-me/" class="btn btn-primary blue">Get in touch</a>
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <a href="https://abirett3.github.io/recent-projects/" class="btn btn-primary">See My Works</a>
 
-              <a href="#about" class="btn">About Me</a>
+              <a href="https://abirett3.github.io/hire-me/" class="btn btn-secondary">Contact Me</a>
             </div>
 
           </div>
@@ -197,169 +222,146 @@
         - #ABOUT
       -->
 
-      <section class="section about" id="about">
+      <section class="section about" aria-label="about">
         <div class="container">
 
-          <figure class="about-banner">
+          <div class="wrapper">
 
-            <img src="./assets/images/about-banner.png" width="800" height="652" loading="lazy" alt="Ethan's Photo"
-              class="img-cover">
+            <div data-reveal="left">
+              <h2 class="h2 section-title">My Skills & Experience</h2>
 
-            <img src="./assets/images/absolute-image.png" width="800" height="717" loading="lazy" alt="Ethan's Photo"
-              class="abs-img">
-
-            <div class="abs-icon abs-icon-1">
-              <ion-icon name="logo-css3"></ion-icon>
+              <p class="section-text">
+                I am learning these things for the last 3 years and it feels like learning is a part of my life now. I have created many responsive web projects using html, css & javascript.
+              </p>
             </div>
 
-            <div class="abs-icon abs-icon-2">
-              <ion-icon name="logo-javascript"></ion-icon>
-            </div>
+            <ul class="progress-list" data-reveal="right">
 
-            <div class="abs-icon abs-icon-3">
-              <ion-icon name="logo-angular"></ion-icon>
-            </div>
+              <li class="progress-item">
 
-          </figure>
+                <div class="label-wrapper">
+                  <p>HTML 5</p>
 
-          <div class="about-content">
+                  <span class="span">90 %</span>
+                </div>
 
-            <p class="section-subtitle">I'm Ashfaque Hossain Abir</p>
+                <div class="progress">
+                  <div class="progress-fill" style="width: 90%; background-color: #c7b1dd"></div>
+                </div>
 
-            <h2 class="h2 section-title">Web Development Is My Passion</h2>
+              </li>
 
-            <p class="section-text">
-              I am a self-taught front-end developer from Bangladesh. Internet and web development is my passion and I believe in 
-              helping people with my abilities and knowledge. I love coding, solving problems, building amazing projects, reading 
-              books & many other cool stuffs. I believe, Knowledge has no limits!
-            </p>
+              <li class="progress-item">
 
-            <p class="section-text">
-              Age: 22 Years
-            </p>
+                <div class="label-wrapper">
+                  <p>CSS 3</p>
 
-            <p class="section-text">
-              Country: <!-- Bangladesh Flag SVG -->
-              <svg style="display: inline-block" xmlns="http://www.w3.org/2000/svg" width="16pt" height="10pt" viewBox="0 0 16 10">
-                <g id="surface1">
-                  <rect x="0" y="0" width="16" height="10" style="
-                        fill: rgb(0%, 41.568627%, 30.588235%);
-                        fill-opacity: 1;
-                        stroke: none;
-                      "></rect>
-                  <path style="
-                        stroke: none;
-                        fill-rule: nonzero;
-                        fill: rgb(
-                          95.686275%,
-                          16.470588%,
-                          25.490196%
-                        );
-                        fill-opacity: 1;
-                      " d="M 10.398438 5 C 10.398438 6.839844 8.96875 8.332031 7.199219 8.332031 C 5.433594 8.332031 4 6.839844 4 5 C 4 3.160156 5.433594 1.667969 7.199219 1.667969 C 8.96875 1.667969 10.398438 3.160156 10.398438 5 Z M 10.398438 5 "></path>
-                </g>
-              </svg>
-              Bangladesh
-            </p>
+                  <span class="span">80 %</span>
+                </div>
 
-            <a href="https://abirett3.github.io/recent-projects/" class="btn btn-primary blue">View Portfolio</a>
+                <div class="progress">
+                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Javascript</p>
+
+                  <span class="span">75 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 75%; background-color: #b0d4c1"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Wordpress</p>
+
+                  <span class="span">90 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 90%; background-color: #e3a6b6"></div>
+                </div>
+
+              </li>
+
+            </ul>
 
           </div>
 
-        </div>
-      </section>
+          <ul class="grid-list">
 
+            <li data-reveal="bottom">
+              <div class="about-card">
 
-
-
-
-      <!-- 
-        - #PORTFOLIO
-      -->
-
-      <section class="section portfolio" id="portfolio">
-        <div class="container">
-
-          <p class="section-subtitle">Portfolio</p>
-
-          <h2 class="h2 section-title">My Amazing Works</h2>
-
-          <p class="section-text">
-            I stored many working projects in my projects gallery. Click on "View Project" to see demos or source codes.
-          </p>
-
-          <ul class="portfolio-list">
-
-            <li>
-              <a href="https://abirett3.github.io/drawing-app/" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Drawing Web-App</p>
-
-                  <h3 class="h3 card-title">Web Application for Drawing or Painting</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
+                <div class="card-icon">
+                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
                 </div>
-              </a>
+
+                <h3 class="h4 card-title">Web Design</h3>
+
+                <p class="card-text">
+                  I will help you to design responsive & modern websites from scratch using HTML, CSS, JavaScript, Bootstrap.
+                </p>
+
+              </div>
             </li>
 
-            <li>
-              <a href="https://abirett3.github.io/gamics/" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
-                <div class="card-content">
+            <li data-reveal="bottom" data-reveal-delay="0.25s">
+              <div class="about-card">
 
-                  <p class="card-subtitle">Gamics</p>
-
-                  <h3 class="h3 card-title">Gamics - Gaming E-commerce Website</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
+                <div class="card-icon">
+                  <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
                 </div>
-              </a>
+
+                <h3 class="h4 card-title">Tech Support</h3>
+
+                <p class="card-text">
+                  Got stuck somewhere and badly need help or fix? I can be your savior on any tech-related problems.
+                </p>
+
+              </div>
             </li>
 
-            <li>
-              <a href="https://abirett3.github.io/weather-app/" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
-                <div class="card-content">
+            <li data-reveal="bottom" data-reveal-delay="0.5s">
+              <div class="about-card">
 
-                  <p class="card-subtitle">Weather Web-App</p>
-
-                  <h3 class="h3 card-title">Web-App for Viewing Weather Conditions</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
+                <div class="card-icon">
+                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
+                    alt="web development icon">
                 </div>
-              </a>
+
+                <h3 class="h4 card-title">Wordpress Development</h3>
+
+                <p class="card-text">
+                  Determined to deploy a site on WordPress? I can help you A-Z about it till launching your website.
+                </p>
+
+              </div>
             </li>
 
-            <li>
-              <a href="https://abirett3.github.io/todo-list-app/" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
-                <div class="card-content">
+            <li data-reveal="bottom" data-reveal-delay="0.75s">
+              <div class="about-card">
 
-                  <p class="card-subtitle">Todo-List Web-App</p>
-
-                  <h3 class="h3 card-title">Web Application for creating task</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
+                <div class="card-icon">
+                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
                 </div>
-              </a>
+
+                <h3 class="h4 card-title">SEO</h3>
+
+                <p class="card-text">
+                  You will get all the help you can imagine from me to build a better space for your website on the internet.
+                </p>
+
+              </div>
             </li>
 
           </ul>
@@ -372,91 +374,141 @@
 
 
       <!-- 
-        - #SKILLS
+        - #PROJECT
       -->
 
-      <section class="section skills" id="skills">
+      <section class="section project" aria-labelledby="project-label">
         <div class="container">
 
-          <p class="section-subtitle">My Skills</p>
+          <div class="title-wrapper" data-reveal="top">
 
-          <h2 class="h2 section-title">My creative skills & experiences</h2>
+            <div>
+              <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
 
-          <p class="section-text">
-            I am learning these things for the last 3 years and it feels like learning is a part of my life now.
-          </p>
+              <p class="section-text">
+                Check out some of my latest projects with creative ideas.
+              </p>
+            </div>
 
-          <ul class="skills-list">
+            <a href="https://abirett3.github.io/recent-projects/" class="btn btn-secondary">See All Projects</a>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">CSS</h3>
+          </div>
 
-                <data class="skills-data" value="95">95%</data>
-              </div>
+          <ul class="grid-list">
 
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">React</h3>
+                <div class="card-content" data-reveal="left">
 
-                <data class="skills-data" value="75">75%</data>
-              </div>
+                  <p class="card-tag" style="color: #a07cc5">Web Design</p>
 
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
+                  <h3 class="h3 card-title">Gamics - Gaming Website</h3>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 90%">
-                <h3 class="skills-title">HTML</h3>
+                  <p class="card-text">
+                    Gamics is a fully responsive gaming website, Responsive for all devices, build using HTML, CSS, and JavaScript.
+                  </p>
 
-                <data class="skills-data" value="90">90%</data>
-              </div>
+                  <a href="https://abirett3.github.io/gamics/" class="btn-text" style="color: #a07cc5">
+                    <span class="span">See Project</span>
 
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 90%"></div>
-              </div>
-            </li>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">Python</h3>
+                </div>
 
-                <data class="skills-data" value="70">70%</data>
-              </div>
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project_img_1.png" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
 
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 70%"></div>
               </div>
             </li>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">PHP</h3>
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
 
-                <data class="skills-data" value="80">80%</data>
-              </div>
+                <div class="card-content" data-reveal="right">
 
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 80%"></div>
+                  <p class=" card-tag" style="color: #3f78e0">Web Application</p>
+
+                  <h3 class="h3 card-title">Weather Web App</h3>
+
+                  <p class="card-text">
+                    In this weather app, you can get the weather details of a particular city by entering the city name
+                  </p>
+
+                  <a href="https://abirett3.github.io/weather-app/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/project_img_2.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
               </div>
             </li>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">JavaScript</h3>
+            <li>
+              <div class="project-card project-card-3" style="background-color: #f5faf7">
 
-                <data class="skills-data" value="75">75%</data>
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #7cb798">Web Application</p>
+
+                  <h3 class="h3 card-title">Todo List Web App</h3>
+
+                  <p class="card-text">
+                    In this todo app, you can easily add, edit, delete or mark as complete your tasks. There are filters button too that helps you to filter the tasks accordingly.
+                  </p>
+
+                  <a href="https://abirett3.github.io/todo-list-app/" class="btn-text" style="color: #7cb798">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project_img_3.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
               </div>
+            </li>
 
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
+            <li>
+              <div class="project-card project-card-4" style="background-color: #fcf4f6">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #d16b86">Games</p>
+
+                  <h3 class="h3 card-title">Quiz Game</h3>
+
+                  <p class="card-text">
+                    If the user selected option is correct, the selected option color, background color changed to green and the selected answer is correct.
+                  </p>
+
+                  <a href="https://abirett3.github.io/quiz-app/" class="btn-text" style="color: #d16b86">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project_img_4.png" width="620" height="370" loading="lazy" alt="Mobile Design"
+                    class="w-100">
+                </figure>
+
               </div>
             </li>
 
@@ -473,163 +525,44 @@
         - #CONTACT
       -->
 
-      <section class="section contact" id="contact">
+      <section class="section contact" aria-label="contact">
         <div class="container">
 
           <div class="contact-card">
 
-            <p class="card-subtitle">Get in touch</p>
+            <div class="contact-content" data-reveal="left">
 
-            <h2 class="h2 section-title">Contact Me</h2>
+              <div class="card-icon">
+                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
 
-            <div class="wrapper">
+              <h2 class="h2 section-title">Have Any Project?</h2>
 
-              <form action="https://formspree.io/f/mrgjvybo" class="contact-form" method="post">
+              <p class="section-text">
+                Don't be hesitate to mail me. You can contact with me using this form, or you can mail me using the given below email address.
+              </p>
 
-                <input type="text" name="name" placeholder="Name" required class="contact-input">
-
-                <input type="email" name="email" placeholder="Email" required class="contact-input">
-
-                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
-
-                <button type="submit" class="btn-submit">Submit Message</button>
-
-              </form>
-
-              <ul class="contact-list">
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="location"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Address</h3>
-
-                    <address class="contact-item-link">
-                      Dhaka-1217, Bangladesh
-                    </address>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="mail"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Email</h3>
-
-                    <a href="mailto:ashfaquehossain300@gmail.com" class="contact-item-link">Click Here</a>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="call"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Phone</h3>
-
-                    <a href="tel:+8801788420386" class="contact-item-link">+880 1788420386</a>
-                  </div>
-
-                </li>
-
-              </ul>
+              <p class="section-text">
+                Email: ashfaquehossain300@gmail.com
+              </p>
 
             </div>
 
+            <form action="https://formspree.io/f/mrgjvybo" class="contact-form" data-reveal="right">
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Name *" required class="input-field">
+
+                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+              </div>
+
+              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">Send message</button>
+
+            </form>
+
           </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PROJECTS
-      -->
-
-      <section class="section blog" id="projects">
-        <div class="container">
-
-          <p class="section-subtitle">Recent Projects</p>
-
-          <h2 class="h2 section-title">Checkout My Recent Projects</h2>
-
-          <p class="section-text">
-            I created many responsive web projects using HTML, CSS & JavaScript.
-          </p>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="https://abirett3.github.io/image-editor/">
-                    <img src="./assets/images/works-1.png" width="1181" height="843" loading="lazy"
-                      alt="Image Editor" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="https://abirett3.github.io/image-editor/" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="https://abirett3.github.io/image-editor/">Image Editor Web Application</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="https://abirett3.github.io/quiz-app/">
-                    <img src="./assets/images/works-2.png" width="1181" height="843" loading="lazy"
-                      alt="Quiz Game" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="https://abirett3.github.io/quiz-app/" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="https://abirett3.github.io/quiz-app/">Quiz Game Web Application</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="https://abirett3.github.io/notes-app/">
-                    <img src="./assets/images/works-3.png" width="1181" height="843" loading="lazy"
-                      alt="Notes App" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="https://abirett3.github.io/notes-app/" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="https://abirett3.github.io/notes-app/">Notes Web Application</a>
-                </h3>
-
-              </div>
-            </li>
-
-          </ul>
 
         </div>
       </section>
@@ -649,31 +582,45 @@
     <div class="container">
 
       <p class="copyright">
-        &copy; 2022 <a href="http://abirett3.github.io/" class="copyright-link">A.H. Abir</a>. All Rights Reserved
+        © 2023 A.H. Abir | Innovating The Web
       </p>
 
-      <ul class="footer-list">
+      <ul class="social-list">
+
         <li>
-          <a href="#" class="footer-link">Terms & Condition</a>
+          <a href="https://twitter.com/ashfaquertc70" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="https://www.facebook.com/ashfaquertx" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
         </li>
+
+        <li>
+          <a href="https://github.com/abirett" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/tesszedox/" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com/channel/UCOPh7wtyJgve_YknUFXp0HA/about" class="social-link">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+
       </ul>
 
     </div>
   </footer>
-
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
 
 
 
