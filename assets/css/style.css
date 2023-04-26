@@ -596,12 +596,6 @@ textarea.input-field {
 
   .contact-card { padding: 68px; }
 
-
-  /**
-   * Do Not Display
-   */
-  .hidden {display: none;}
-
 }
 
 
@@ -671,11 +665,6 @@ textarea.input-field {
   }
 
   .copyright { margin-block-end: 0; }
-
-  /**
-   * Do Not Display
-   */
-  .hidden {display: none;}
 
 }
 
@@ -907,4 +896,16 @@ textarea.input-field {
 
   .about .grid-list { gap: 60px; }
 
+}
+
+
+/** 
+*Hidden from mobile screen
+*/
+
+@media only screen and (max-width: 600px) {
+  /**
+   * Do Not Display
+   */
+  .hidden {display: none;}
 }
