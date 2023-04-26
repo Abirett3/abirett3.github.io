@@ -2,4 +2,4 @@
 This is my brand new portfolio website made using HTML, CSS, JavaScript, Bootstrap, etc. Made With ♥ by Ashfaque Hossain Abir
 
 ## Preview
-<img src="Images/preview.PNG"/>
+<img src="readme preview/preview.PNG"/>
