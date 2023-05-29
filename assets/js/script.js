@@ -108,3 +108,25 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxDJF2M4PpjjtTCkSn0CO
         .catch(error => console.error('Error!', error.message))
 
     })
+
+
+//-------------- For prevent hacking -----------------
+
+// Disable context menu
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+ }, false);
+
+ // Disable “Ctrl+Shift+I”, “Ctrl+U” and ”F12 key
+ document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey || e.keyCode==123) {
+   e.stopPropagation();
+   e.preventDefault();
+  }
+ });
+
+// Hiding the javascript file from developer tools source
+let scriptElement = document.createElement("script");
+scriptElement.type = "text/javascript";
+scriptElement.src = "script.js";
+document.body.appendChild(scriptElement);
