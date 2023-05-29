@@ -128,5 +128,5 @@ document.addEventListener("contextmenu", (e) => {
 // Hiding the javascript file from developer tools source
 let scriptElement = document.createElement("script");
 scriptElement.type = "text/javascript";
-scriptElement.src = "script.js";
+scriptElement.src = "assets/js/script.js";
 document.body.appendChild(scriptElement);
