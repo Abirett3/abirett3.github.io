@@ -245,6 +245,72 @@ body.nav-active { overflow: hidden; }
 
 
 
+/*-----------------------------------*\
+  # Custom Context Menu
+\*-----------------------------------*/
+
+.wrapper{
+  visibility: hidden;
+  position: absolute;
+  width: 200px;
+  border-radius: 10px;
+  background: #202124;
+  box-shadow: 0 12px 35px rgba(255, 255, 255, 0.1);
+  z-index: 6;
+}
+.wrapper .menu{
+  padding: 6px 8px;
+}
+.content .item{
+  list-style: none;
+  font-size: 14px;
+  color: #5c97c7; /* #ff652e */
+  height: 35px;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  padding: 0 5px 0 10px;
+}
+.content .item:hover{
+  background: #202124;
+}
+.content .item span{
+  margin-left: 8px;
+  font-size: 19px;
+}
+.content .setting{
+  display: flex;
+  margin-top: -5px;
+  padding: 5px 12px;
+  border-top: 1px solid #333333;
+}
+.content .share{
+  position: relative;
+  justify-content: space-between;
+}
+.share .share-menu{
+  position: absolute;
+  background: #202124;
+  width: 200px;
+  right: -200px;
+  top: -95px;
+  padding: 13px;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.08);
+  transition: 0.2s ease;
+}
+.share:hover .share-menu{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
 
 /*-----------------------------------*\
   #HEADER
