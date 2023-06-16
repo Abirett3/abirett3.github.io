@@ -341,6 +341,15 @@ body.nav-active { overflow: hidden; }
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .outer-space {
+    width: 370px;
+  }
+  .rocket {
+    height: 180px;
+  }
+}
+
 
 
 
