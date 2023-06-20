@@ -87,3 +87,12 @@ window.addEventListener("load", () => {
   const preloader = document.querySelector(".preloader");
   preloader.classList.add("preload-finish");
 });
+
+
+/**
+ * Get Year
+ */
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
